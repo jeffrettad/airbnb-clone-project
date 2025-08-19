@@ -31,9 +31,12 @@ Implement and document key security measures to safeguard application data and e
 
 7. CI/CD Pipeline Integration:
 Gain insights into setting up automated development pipelines, boosting efficiency and minimizing errors during the deployment phase.
+
+## Team Roles
 - Backend Developer
 - Database Administrator:
 - DevOps Engineer:
+  
 i. Facilitates cooperation between development and operations teams
 
 ii. Builds continuous integration and continuous delivery (CI/CD) pipelines for faster delivery
