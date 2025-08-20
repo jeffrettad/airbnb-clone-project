@@ -68,9 +68,7 @@ DELETE /bookings/{booking_id}/ - Delete a specific booking
 
 + Payments:
 
-POST /payments/ - Process a payment
-
-Reviews
+POST /payments/ - Process a payment Reviews
 
 GET /reviews/ - List all reviews
 
