@@ -56,9 +56,9 @@ DELETE /properties/{property_id}/ - Delete a specific property
 
 + Bookings:
 
-$ GET /bookings/ - List all bookings
+ GET /bookings/ - List all bookings
 
-$ POST /bookings/ - Create a new booking
+ POST /bookings/ - Create a new booking
 
 GET /bookings/{booking_id}/ - Retrieve a specific booking
 
