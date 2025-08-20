@@ -33,11 +33,9 @@ Implement and document key security measures to safeguard application data and e
 Gain insights into setting up automated development pipelines, boosting efficiency and minimizing errors during the deployment phase.
 
 ## Team Roles
-- Backend Developer
-- Database Administrator:
-- DevOps Engineer:
-  
-i. Facilitates cooperation between development and operations teams
++ Backend Developer: back-end not only write code but also do the tasks of an architect—for example, devise an app architecture or design and implement the necessary integrations
++ Database Administrator & DevOps Engineer: They oversee and facilitate code releases on a CI/CD basis.
++ QA Engineer:
+(i) Makes sure an application performs according to requirements
 
-ii. Builds continuous integration and continuous delivery (CI/CD) pipelines for faster delivery
-- QA Engineer: design and implement quality assurance processes and procedures that help prevent defects at later stages of development.
+(ii) Spots functional and non-functional defects
