@@ -33,9 +33,10 @@ Implement and document key security measures to safeguard application data and e
 Gain insights into setting up automated development pipelines, boosting efficiency and minimizing errors during the deployment phase.
 
 ## Team Roles
-+ Backend Developer: back-end not only write code but also do the tasks of an architect—for example, devise an app architecture or design and implement the necessary integrations
++ Backend Developer: back-end developer are not only write code but also do the tasks of an architect—for example, devise an app architecture or design and implement the necessary integrations
 + Database Administrator & DevOps Engineer: They oversee and facilitate code releases on a CI/CD basis.
 + QA Engineer:
-(i) Makes sure an application performs according to requirements
+  
+(i) They makes sure an application performs according to requirements
 
-(ii) Spots functional and non-functional defects
+(ii) They Spots functional and non-functional defects
