@@ -30,52 +30,48 @@ Data Optimization: Ensure efficient data retrieval and storage through database 
 (ii) They Spots functional and non-functional defects
 
 # Database Design
-+ Users:
+# User
 
-GET /users/ - List all users
+- id, name, email, role
 
-POST /users/ - Create a new user
+- A user can own multiple Properties
 
-GET /users/{user_id}/ - Retrieve a specific user
+- A user can make multiple Bookings
 
-PUT /users/{user_id}/ - Update a specific user
+- A user can leave multiple Reviews
 
-DELETE /users/{user_id}/ - Delete a specific user
+- A user can make multiple Payments
 
-+ Properties:
+# Property
 
-GET /properties/ - List all properties
+- id, title, description, location, price_per_night
 
-POST /properties/ - Create a new property
+- Belongs to a User (host)
 
-GET /properties/{property_id}/ - Retrieve a specific property
+- Has many Bookings
 
-PUT /properties/{property_id}/ - Update a specific property
+- Has many Reviews
 
-DELETE /properties/{property_id}/ - Delete a specific property
+# Booking
 
-+ Bookings:
+- id, user_id, property_id, start_date, end_date, status
 
- GET /bookings/ - List all bookings
+- Belongs to a User (guest)
 
- POST /bookings/ - Create a new booking
+- Belongs to a Property
 
-GET /bookings/{booking_id}/ - Retrieve a specific booking
+- Has many Payments
 
-PUT /bookings/{booking_id}/ - Update a specific booking
+# Review
 
-DELETE /bookings/{booking_id}/ - Delete a specific booking
+- id, user_id, property_id, rating, comment
 
-+ Payments:
+- Belongs to a User
 
-POST /payments/ - Process a payment Reviews
+- Belongs to a Property
 
-GET /reviews/ - List all reviews
+# Payment
 
-POST /reviews/ - Create a new review
+- id, booking_id, amount, payment_method, status
 
-GET /reviews/{review_id}/ - Retrieve a specific review
-
-PUT /reviews/{review_id}/ - Update a specific review
-
-DELETE /reviews/{review_id}/ - Delete a specific review
+  - Belongs to a Booking
