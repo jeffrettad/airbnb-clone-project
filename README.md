@@ -104,3 +104,20 @@ All user inputs will be validated and sanitized before processing to guard again
 Payment data will be processed through trusted third-party gateways (e.g., Stripe, PayPal) with PCI-DSS compliance.  
 **Why:** Ensures financial transactions are handled securely, protecting both users
 
+## ⚙️ CI/CD Pipeline
+
+Continuous Integration and Continuous Deployment (CI/CD) pipelines automate the process of building, testing, and deploying code.  
+They help ensure that new changes are integrated smoothly into the project, reducing manual errors and speeding up development cycles.  
+
+### Why It’s Important
+- **Consistency:** Ensures all code changes are tested and deployed in the same way every time.  
+- **Faster Delivery:** Automates repetitive tasks, allowing new features and fixes to reach production quicker.  
+- **Improved Quality:** Automated tests run on each commit, helping detect bugs early in the development process.  
+- **Collaboration:** Makes it easier for multiple developers to contribute without breaking the main branch.  
+
+### Tools Used
+- **GitHub Actions:** Automates testing and deployment workflows directly within GitHub.  
+- **Docker:** Provides containerized environments to ensure consistent builds across development, staging, and production.  
+- **CI/CD Pipelines (e.g., Jenkins, GitLab CI):** Can also be integrated to manage more complex workflows if needed.  
+
+
