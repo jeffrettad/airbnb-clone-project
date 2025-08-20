@@ -75,3 +75,32 @@ Data Optimization: Ensure efficient data retrieval and storage through database 
 - id, booking_id, amount, payment_method, status
 
   - Belongs to a Booking
+ 
+  ## 🔐 API Security
+
+Ensuring the security of backend APIs is critical to protect sensitive user data, maintain trust, and safeguard financial transactions. The following security measures will be implemented in the Airbnb Clone project:
+
+### 1. Authentication
+Only verified users will be allowed to access the system using secure methods such as JWT (JSON Web Tokens) or OAuth2.  
+**Why:** Protects against unauthorized access and ensures that only legitimate users can interact with the platform.  
+
+### 2. Authorization
+Role-based access control (RBAC) will be enforced to determine what actions users can perform (e.g., hosts can create properties, guests can make bookings).  
+**Why:** Prevents users from accessing data or features they are not permitted to use, ensuring data integrity and privacy.  
+
+### 3. Data Encryption
+Sensitive data (e.g., passwords, payment information) will be encrypted both in transit (HTTPS/SSL) and at rest.  
+**Why:** Protects against data breaches and ensures that intercepted data cannot be read by attackers.  
+
+### 4. Rate Limiting & Throttling
+API endpoints will include rate limiting to prevent abuse such as brute-force attacks or denial-of-service attempts.  
+**Why:** Maintains system availability and prevents malicious users from overwhelming the platform.  
+
+### 5. Input Validation & Sanitization
+All user inputs will be validated and sanitized before processing to guard against injection attacks (SQL injection, XSS).  
+**Why:** Prevents attackers from exploiting vulnerabilities to manipulate the system or access restricted data.  
+
+### 6. Secure Payment Handling
+Payment data will be processed through trusted third-party gateways (e.g., Stripe, PayPal) with PCI-DSS compliance.  
+**Why:** Ensures financial transactions are handled securely, protecting both users
+
